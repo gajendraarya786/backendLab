@@ -11,8 +11,8 @@ app.use(express.urlencoded({extended: true, limit: "16kb"}));
 app.use(express.static("public"));
 
 
-import todoRouters from './routes/todo.routes.js'
+import todoRouter from './routes/todo.routes.js'
 
-app.use("/api/todos", todoRouters);
+app.use("/api/todos", todoRouter);
 
 export {app};
